@@ -9,8 +9,8 @@ def handler(dir_path: Path, output_file: Path) -> None:
     for file in files:
         try:
             data += controller(file)
-        except Exception as e:
-            print(e)
+        except KeyError as ke:
+            print(ke)
             continue
     header = [
         "message",
