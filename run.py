@@ -8,7 +8,8 @@ def handler(dir_path: Path, output_file: Path) -> None:
     files = [file for file in dir_path.iterdir() if file.suffix in [".json"]]
     for file in files:
         try:
-            data += controller(file)
+            _data = controller(file)
+            data += _data
         except KeyError as ke:
             print(ke)
             continue
