@@ -1,0 +1,78 @@
+┌responseContext
+│  ├serviceTrackingParams[]
+│  │  ┌service: str
+│  │  └params[]
+│  │      ┌key: str
+│  │      └value: str
+│  ├mainAppWebResponseContext
+│  │  └loggedOut: bool
+│  └webResponseContextExtensionData
+│      └hasDecorated: bool
+└continuationContents
+    └liveChatContinuation
+        ├continuations[]
+        │  *liveChatReplayContinuationData
+        │     ├timeUntilLastMessageMsec: int
+        │     ├continuation: str
+        │     └clickTrackingParams: str
+        │  *playerSeekContinuationData
+        │     ├continuation: str
+        │     └clickTrackingParams: str
+        └actions[]
+            ┌clickTrackingParams: str
+            └replayChatItemAction
+                ├videoOffsetTimeMsec: str
+                └actions[0]
+                    ?clickTrackingParams
+                    #addChatItemAction
+                       ├clientId: str
+                       └item
+                           #liveChatTextMessageRenderer
+                              ├message
+                              │  └runs[]
+                              │      #text: str
+                              │      #emoji
+                              │         ├emojiId: str
+                              │         ├shortcuts[str]
+                              │         ├searchTerms[str]
+                              │         ├image
+                              │         │  ├thumbnails[]
+                              │         │  │  ┌url: str
+                              │         │  │  ├width: str
+                              │         │  │  └height: str
+                              │         │  └accessibility
+                              │         │      └accessibilityData
+                              │         │          └label: str
+                              │         └isCustomEmoji: bool
+                              ├authorName
+                              │  └simpleText: str
+                              ├authorPhoto
+                              │  └thumbnails[]
+                              │      ┌url: str
+                              │      ├width: int
+                              │      └height: int
+                              ├contextMenuEndpoint
+                              │  ├commandMetadata
+                              │  │  └webCommandMetadata
+                              │  │      └ignoreNavigation: bool
+                              │  └liveChatItemContextMenuEndpoint
+                              │      └params: str
+                              ├id: str
+                              ├timestampUsec: str
+                              ├authorBadges
+                              │  └liveChatAuthorBadgeRenderer
+                              │      ├customThumbnail
+                              │      │  └thumbnails[]
+                              │      │      url: str
+                              │      ├tooltip: str
+                              │      └accessibility
+                              │          └accessibilityData
+                              │              └label: str
+                              ├authorExternalChannelId
+                              ├contextMenuAccessibility
+                              │  └accessibilityData
+                              │      └label: str
+                              └timestampText
+                                  └simpleText: str
+                           #liveChatPaidMessageRenderer
+                           

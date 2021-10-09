@@ -1,0 +1,244 @@
+┌responseContext
+│  ├serviceTrackingParams[]
+│  │  ┌service: str
+│  │  └params[]
+│  │      ┌key: str
+│  │      └value: str
+│  ├mainAppWebResponseContext
+│  │  └loggedOut: bool
+│  └webResponseContextExtensionData
+│      └hasDecorated: bool
+├trackingParams
+└continuationContents
+    └liveChatContinuation
+        ├continuations
+        │  * liveChatReplayContinuationData
+        │      ├timeUntilLastMessageMsec
+        │      ├continuation
+        │      └clickTrackingParams
+        ├actions[]
+        │  ┌replayChatItemAction
+        │  │  ├actions
+        │  │  │  ├addChatItemAction
+        │  │  │  │  ├item
+        │  │  │  │  │  ├liveChatTextMessageRenderer
+        │  │  │  │  │  │  ├message
+        │  │  │  │  │  │  │  runs
+        │  │  │  │  │  │  │    text
+        │  │  │  │  │  │  │    emoji
+        │  │  │  │  │  │  │      emojiId
+        │  │  │  │  │  │  │      shortcuts
+        │  │  │  │  │  │  │      searchTerms
+        │  │  │  │  │  │  │      image
+        │  │  │  │  │  │  │        thumbnails
+        │  │  │  │  │  │  │          url
+        │  │  │  │  │  │  │          width
+        │  │  │  │  │  │  │          height
+        │  │  │  │  │  │  │        accessibility
+        │  │  │  │  │  │  │          accessibilityData
+        │  │  │  │  │  │  │            label
+        │  │  │  │  │  │  │      isCustomEmoji
+        │  │  │  │  │  │  ├authorName
+        │  │  │  │  │  │  │  simpleText
+        │  │  │  │  │  │  │authorPhoto
+        │  │  │  │  │  │  │  thumbnails
+        │  │  │  │  │  │  │    url
+        │  │  │  │  │  │  │    width
+        │  │  │  │  │  │  │    height
+        │  │  │  │  │  │  ├contextMenuEndpoint
+        │  │  │  │  │  │  │  commandMetadata
+        │  │  │  │  │  │  │    webCommandMetadata
+        │  │  │  │  │  │  │      ignoreNavigation
+        │  │  │  │  │  │  │  liveChatItemContextMenuEndpoint
+        │  │  │  │  │  │  │    params
+        │  │  │  │  │  │  ├id
+        │  │  │  │  │  │  ├timestampUsec
+        │  │  │  │  │  │  ├authorBadges
+        │  │  │  │  │  │  │  liveChatAuthorBadgeRenderer
+        │  │  │  │  │  │  │    customThumbnail
+        │  │  │  │  │  │  │      thumbnails
+        │  │  │  │  │  │  │        url
+        │  │  │  │  │  │  │    tooltip
+        │  │  │  │  │  │  │    accessibility
+        │  │  │  │  │  │  │      accessibilityData
+        │  │  │  │  │  │  │        label
+        │  │  │  │  │  │  ├authorExternalChannelId
+        │  │  │  │  │  │  ├contextMenuAccessibility
+        │  │  │  │  │  │  │  accessibilityData
+        │  │  │  │  │  │  │    label
+        │  │  │  │  │  │  └timestampText
+        │  │  │  │  │  │      └simpleText
+        │  │  │  │  │  ├liveChatPaidMessageRenderer
+        │  │  │  │  │  │  id
+        │  │  │  │  │  │  timestampUsec
+        │  │  │  │  │  │  authorName
+        │  │  │  │  │  │    simpleText
+        │  │  │  │  │  │  authorPhoto
+        │  │  │  │  │  │    thumbnails
+        │  │  │  │  │  │      url
+        │  │  │  │  │  │      width
+        │  │  │  │  │  │      height
+        │  │  │  │  │  │  purchaseAmountText
+        │  │  │  │  │  │    simpleText
+        │  │  │  │  │  │  message
+        │  │  │  │  │  │    runs
+        │  │  │  │  │  │      text
+        │  │  │  │  │  │  headerBackgroundColor
+        │  │  │  │  │  │  headerTextColor
+        │  │  │  │  │  │  bodyBackgroundColor
+        │  │  │  │  │  │  bodyTextColor
+        │  │  │  │  │  │  authorExternalChannelId
+        │  │  │  │  │  │  authorNameTextColor
+        │  │  │  │  │  │  contextMenuEndpoint
+        │  │  │  │  │  │    commandMetadata
+        │  │  │  │  │  │      webCommandMetadata
+        │  │  │  │  │  │        ignoreNavigation
+        │  │  │  │  │  │    liveChatItemContextMenuEndpoint
+        │  │  │  │  │  │      params
+        │  │  │  │  │  │  timestampColor
+        │  │  │  │  │  │  contextMenuAccessibility
+        │  │  │  │  │  │    accessibilityData
+        │  │  │  │  │  │      label
+        │  │  │  │  │  │  timestampText
+        │  │  │  │  │  │    simpleText
+        │  │  │  │  │  ├liveChatMembershipItemRenderer
+        │  │  │  │  │  │  id
+        │  │  │  │  │  │  timestampUsec
+        │  │  │  │  │  │  timestampText
+        │  │  │  │  │  │    simpleText
+        │  │  │  │  │  │  authorExternalChannelId
+        │  │  │  │  │  │  headerSubtext
+        │  │  │  │  │  │    runs
+        │  │  │  │  │  │      text
+        │  │  │  │  │  │  authorName
+        │  │  │  │  │  │    simpleText
+        │  │  │  │  │  │  authorPhoto
+        │  │  │  │  │  │    thumbnails
+        │  │  │  │  │  │      url
+        │  │  │  │  │  │      width
+        │  │  │  │  │  │      height
+        │  │  │  │  │  │  authorBadges
+        │  │  │  │  │  │    liveChatAuthorBadgeRenderer
+        │  │  │  │  │  │      customThumbnail
+        │  │  │  │  │  │        thumbnails
+        │  │  │  │  │  │          url
+        │  │  │  │  │  │      tooltip
+        │  │  │  │  │  │      accessibility
+        │  │  │  │  │  │        accessibilityData
+        │  │  │  │  │  │          label
+        │  │  │  │  │  │  contextMenuEndpoint
+        │  │  │  │  │  │    commandMetadata
+        │  │  │  │  │  │      webCommandMetadata
+        │  │  │  │  │  │        ignoreNavigation
+        │  │  │  │  │  │    liveChatItemContextMenuEndpoint
+        │  │  │  │  │  │      params
+        │  │  │  │  │  │  contextMenuAccessibility
+        │  │  │  │  │  │    accessibilityData
+        │  │  │  │  │  │      label
+        │  │  │  │  │  ├liveChatViewerEngagementMessageRenderer
+        │  │  │  │  │    id
+        │  │  │  │  │    timestampUsec
+        │  │  │  │  │    icon
+        │  │  │  │  │      iconType
+        │  │  │  │  │    message
+        │  │  │  │  │      runs
+        │  │  │  │  │        text
+        │  │  │  │  └clientId
+        │  │  │  └clickTrackingParams
+        │  │  └videoOffsetTimeMsec
+        │  └clickTrackingParams
+        ├itemList
+        │  liveChatItemListRenderer
+        │    maxItemsToDisplay
+        │    moreCommentsBelowButton
+        │      buttonRenderer
+        │        style
+        │        icon
+        │          iconType
+        │        trackingParams
+        │        accessibilityData
+        │          accessibilityData
+        │            label
+        │    enablePauseChatKeyboardShortcuts
+        ├header
+        │  liveChatHeaderRenderer
+        │    overflowMenu
+        │      menuRenderer
+        │        items
+        │          menuServiceItemRenderer
+        │            text
+        │              runs
+        │                text
+        │            icon
+        │              iconType
+        │            serviceEndpoint
+        │              clickTrackingParams
+        │              toggleLiveChatTimestampsEndpoint
+        │                hack
+        │            trackingParams
+        │        trackingParams
+        │        accessibility
+        │          accessibilityData
+        │            label
+        │    collapseButton
+        │      buttonRenderer
+        │        style
+        │        size
+        │        isDisabled
+        │        accessibility
+        │          label
+        │        trackingParams
+        │    viewSelector
+        │      sortFilterSubMenuRenderer
+        │        subMenuItems
+        │          title
+        │          selected
+        │          continuation
+        │            reloadContinuationData
+        │              continuation
+        │              clickTrackingParams
+        │          accessibility
+        │            accessibilityData
+        │              label
+        │          subtitle
+        │          trackingParams
+        │          accessibilityData
+        │            label
+        ├ticker
+        │  liveChatTickerRenderer
+        │    sentinel
+        ├trackingParams
+        ├popoutMessage
+        │  messageRenderer
+        │    text
+        │      runs
+        │        text
+        │    trackingParams
+        │    button
+        │      buttonRenderer
+        │        style
+        │        text
+        │          runs
+        │            text
+        │        serviceEndpoint
+        │          clickTrackingParams
+        │          popoutLiveChatEndpoint
+        │            url
+        │        trackingParams
+        ├clientMessages
+        │  reconnectMessage
+        │    runs
+        │      text
+        │  unableToReconnectMessage
+        │    runs
+        │      text
+        │  fatalError
+        │    runs
+        │      text
+        │  reconnectedMessage
+        │    runs
+        │      text
+        │  genericError
+        │    runs
+        │      text
+        └isReplay
