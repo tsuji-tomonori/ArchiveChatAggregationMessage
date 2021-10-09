@@ -7,7 +7,11 @@ def handler(dir_path: Path, output_file: Path) -> None:
     data = []
     files = [file for file in dir_path.iterdir() if file.suffix in [".json"]]
     for file in files:
-        data += controller(file)
+        try:
+            data += controller(file)
+        except Exception as e:
+            print(e)
+            continue
     header = [
         "message",
         "authorName",
