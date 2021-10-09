@@ -28,14 +28,18 @@ def handler(dir_path: Path, output_file: Path) -> None:
 
 def controller(path: Path) -> list:
     input = read_json(path)
-    actions = get_by_path(
-        input,
-        [
-            "continuationContents",
-            "liveChatContinuation",
-            "actions"
-        ]
-    )
+    actions = []
+    try:
+        actions = get_by_path(
+            input,
+            [
+                "continuationContents",
+                "liveChatContinuation",
+                "actions"
+            ]
+        )
+    except KeyError as ke:
+        print(ke)
     res = []
     for action in actions:
         try:
