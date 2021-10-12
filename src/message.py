@@ -1,8 +1,9 @@
 from typing import NamedTuple
+from distutils.util import strtobool
 import os
 
-IS_TEXT_OUTPUT = os.getenv("IS_TEXT_OUTPUT", True)
-IS_EMOJI_OUTPUT = os.getenv("IS_EMOJI_OUTPUT", True)
+IS_TEXT_OUTPUT = strtobool(os.getenv("IS_TEXT_OUTPUT", "true"))
+IS_EMOJI_OUTPUT = strtobool(os.getenv("IS_EMOJI_OUTPUT", "true"))
 
 
 class MessageTuple(NamedTuple):

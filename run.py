@@ -44,7 +44,7 @@ def controller(path: Path) -> list:
     for action in actions:
         try:
             res.append(service(action))
-            print("fin this record")
+            # print("fin this record")
         except KeyError as ke:
             print(f"skip this record. reason: {ke}")
     return res
@@ -71,7 +71,15 @@ def get_action(action: dict) -> dict:
 
 
 if __name__ == "__main__":
-    input_dir = Path(
-        r"C:\Users\20160\Desktop\prog\ArchiveChatAggregation\output\eeMWRfqONNc")
-    output_file = Path.cwd() / "eeMWRfqONNc.csv"
-    handler(input_dir, output_file)
+    target = "kurusunatsume"
+    lst_path = Path.cwd() / "lst" / "kurusunatsume.txt"
+    root = Path(r"G:\マイドライブ\Chat (1)") / target
+    output_dir = Path.cwd() / "csv" / target
+    output_dir.mkdir(exist_ok=True)
+    with open(str(lst_path), "r", encoding="utf-8") as f:
+        input_files = [s.strip() for s in f.readlines()]
+    for file in input_files:
+        input_dir = root / file
+        output_file = output_dir / f"{input_dir.name}.csv"
+        print(f"start: {output_file}")
+        handler(input_dir, output_file)
